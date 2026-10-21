@@ -4,6 +4,8 @@ class DexaiConnect < Formula
   version "0.1.0"
   license :cannot_represent # Sustainable Use License 1.0 is not on the SPDX License List.
 
+  deprecate! date: "2026-10-21", because: "is replaced by dexai (brew install superdurable/tap/dexai)"
+
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/superdurable/superverse/releases/download/dexai-connect-v0.1.0/dexai-connect_v0.1.0_darwin_arm64.tar.gz"
