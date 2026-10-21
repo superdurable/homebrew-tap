@@ -1,5 +1,5 @@
 class DexaiConnect < Formula
-  desc "Connect a local coding agent to a Superverse Project"
+  desc "Connect a local coding agent to a Dex AI Project through Orca"
   homepage "https://github.com/superdurable/superverse"
   version "0.1.0"
   license :cannot_represent # Sustainable Use License 1.0 is not on the SPDX License List.
