@@ -1,5 +1,5 @@
 class Dexcli < Formula
-  desc "Develop and operate Dex from the command line"
+  desc "Develop and operate Dex from the command-line"
   homepage "https://github.com/superdurable/dex"
   version "1.12.0"
   license "MIT"
