@@ -10,17 +10,17 @@
 class Dexai < Formula
   desc "Connect Codex or Claude Code on your computer to a Dex AI Project"
   homepage "https://github.com/superdurable/superverse"
-  version "0.1.3"
+  version "0.1.4"
   license :cannot_represent # Sustainable Use License 1.0 is not on the SPDX License List.
 
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/superdurable/superverse/releases/download/dexai-v0.1.3/dexai_v0.1.3_darwin_arm64.tar.gz"
-    sha256 "eb8bb9e8f4071590043af2fc5818f1b54e4c888be52e17ed3373360e480b61cc"
+    url "https://github.com/superdurable/superverse/releases/download/dexai-v0.1.4/dexai_v0.1.4_darwin_arm64.tar.gz"
+    sha256 "94761c41e13cfeaafae629767139ae0c0829dc850dd1997d97690ff89b39ff25"
   else
-    url "https://github.com/superdurable/superverse/releases/download/dexai-v0.1.3/dexai_v0.1.3_darwin_amd64.tar.gz"
-    sha256 "b7b2efea4f0ab517ab6da0c8d52663aef2920dc5266ea5409cacbf6359ec3775"
+    url "https://github.com/superdurable/superverse/releases/download/dexai-v0.1.4/dexai_v0.1.4_darwin_amd64.tar.gz"
+    sha256 "8a8aa6336cf65ba9e8ae39172f41c61d58e7f89eea34373ef43adf9a0a4edc5b"
   end
 
   def install
