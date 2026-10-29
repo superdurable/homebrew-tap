@@ -1,36 +1,37 @@
 class Dexcli < Formula
   desc "Command-line tool to develop and operate Dex"
   homepage "https://github.com/superdurable/dex"
-  version "1.25.0"
+  version "1.25.2"
   license "MIT"
 
   depends_on "temporal"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/superdurable/dex/releases/download/cli-v1.25.0/dexcli_v1.25.0_darwin_arm64.tar.gz"
-      sha256 "50e439229c2845a3bb8105e6af4503081bcb0fab718edb3d0f7a6e31f495531d"
+      url "https://github.com/superdurable/dex/releases/download/cli-v1.25.2/dexcli_v1.25.2_darwin_arm64.tar.gz"
+      sha256 "68314be61b52d35a9ca5f88a503b5b64772ae14aa42aaa5cdb881f13053fb0b2"
     else
-      url "https://github.com/superdurable/dex/releases/download/cli-v1.25.0/dexcli_v1.25.0_darwin_amd64.tar.gz"
-      sha256 "02287cdc829b41ba22ee6252d5e999c179247b54f685212dca8c1bb2c5625a0d"
+      url "https://github.com/superdurable/dex/releases/download/cli-v1.25.2/dexcli_v1.25.2_darwin_amd64.tar.gz"
+      sha256 "6557d137774a6ced350a3614846a3e6077d458715e7e35f613e567e0bc0d89d7"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/superdurable/dex/releases/download/cli-v1.25.0/dexcli_v1.25.0_linux_arm64.tar.gz"
-      sha256 "5049aea2fba19857ea6fb4b3001b8a78013394b184c39b46389c366d240a74f4"
+      url "https://github.com/superdurable/dex/releases/download/cli-v1.25.2/dexcli_v1.25.2_linux_arm64.tar.gz"
+      sha256 "26ed0eeb2e6462d94c8ac54abfa3c305b603a071ff98197048d65f5755842b6c"
     else
-      url "https://github.com/superdurable/dex/releases/download/cli-v1.25.0/dexcli_v1.25.0_linux_amd64.tar.gz"
-      sha256 "280f2b90ae97e1245519342f4de4df0e8505920cec8207635e48fa020c87efe8"
+      url "https://github.com/superdurable/dex/releases/download/cli-v1.25.2/dexcli_v1.25.2_linux_amd64.tar.gz"
+      sha256 "52bb5db55d7698821f54e10fa7e1c60dc43149c6446aa8267b643289e819fe6a"
     end
   end
 
   def install
-    bin.install "dexcli"
+    bin.install "dexcli", "dex-server-zd"
   end
 
   test do
     assert_match version.to_s, shell_output("#{bin}/dexcli version")
+    assert_match "dex-server-zd", shell_output("#{bin}/dex-server-zd --version")
   end
 end
