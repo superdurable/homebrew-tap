@@ -1,26 +1,26 @@
 class Dexcli < Formula
   desc "Command-line tool to develop and operate Dex"
   homepage "https://github.com/superdurable/dex"
-  version "1.45.0"
+  version "1.46.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/superdurable/dex/releases/download/cli-v1.45.0/dexcli_v1.45.0_darwin_arm64.tar.gz"
-      sha256 "f8989005c282e21580fb4d543daff843276c8dcdb211d65d062994b9124b6b62"
+      url "https://github.com/superdurable/dex/releases/download/cli-v1.46.0/dexcli_v1.46.0_darwin_arm64.tar.gz"
+      sha256 "c03d4f3ac980e3edd4c57027c280248f64322fcc94f6d81df0ae6003bd65f0b1"
     else
-      url "https://github.com/superdurable/dex/releases/download/cli-v1.45.0/dexcli_v1.45.0_darwin_amd64.tar.gz"
-      sha256 "b7a4d4957bb1724bc1296fcc6c48d6e1a73e009ca63d9d714bd21f2e5d834444"
+      url "https://github.com/superdurable/dex/releases/download/cli-v1.46.0/dexcli_v1.46.0_darwin_amd64.tar.gz"
+      sha256 "f6ec0a1c78da79320862f2268cda598a741b2d9bb400eb91b3b239e01a532354"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/superdurable/dex/releases/download/cli-v1.45.0/dexcli_v1.45.0_linux_arm64.tar.gz"
-      sha256 "fbe23dc34bd6ab91f60dba733c7c68918deaa78054be0c3f8f7ee3cfbb1a2281"
+      url "https://github.com/superdurable/dex/releases/download/cli-v1.46.0/dexcli_v1.46.0_linux_arm64.tar.gz"
+      sha256 "247c28745ed2906d39f2c340dcae5cfbbe8c99fc2f00cad182421fc3ac791ace"
     else
-      url "https://github.com/superdurable/dex/releases/download/cli-v1.45.0/dexcli_v1.45.0_linux_amd64.tar.gz"
-      sha256 "9b50703b1ea386635ce0416735d23fe9d05e0b8a2a5a4c3567bca17347305ccd"
+      url "https://github.com/superdurable/dex/releases/download/cli-v1.46.0/dexcli_v1.46.0_linux_amd64.tar.gz"
+      sha256 "42ed422c0952cc666500da151c181918a0d6c45fca9a8f61e8b5350cf49b7a87"
     end
   end
 
